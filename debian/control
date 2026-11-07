@@ -1,0 +1,18 @@
+Source: file-cmds
+Section: utils
+Priority: optional
+Maintainer: Maxwell <maxwell@blueberrypieos.com>
+Build-Depends: pietoolchain (>= 0.1.0)
+Standards-Version: 4.7.3
+Homepage: https://github.com/apple-oss-distributions/file_cmds
+Vcs-Git: https://github.com/blueberrypieos/file-cmds.git -b blueberry-pie-os/latest
+Vcs-Browser: https://github.com/blueberrypieos/file-cmds
+Rules-Requires-Root: no
+
+Package: file-cmds
+Architecture: darwin-arm64
+Essential: yes
+Priority: required
+Depends: bzip2, libmd, libsystem, libutil, libxo, ncurses, xz, zlib
+Description: file commands (ls, cp, mv, rm, ...)
+ BSD file utilities, compression scripts, and manual pages.

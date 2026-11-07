@@ -1,0 +1,94 @@
+.\" SPDX-License-Identifier: BSD-2-Clause
+.\" Copyright (c) 2026 The Blueberry Pie OS Authors
+.Dd November 7, 2026
+.Dt XATTR 1
+.Os
+.Sh NAME
+.Nm xattr
+.Nd list, show, set and remove extended attributes
+.Sh SYNOPSIS
+.Nm
+.Op Fl lrsvx
+.Ar
+.Nm
+.Fl p
+.Op Fl lrsvx
+.Ar name
+.Ar
+.Nm
+.Fl w
+.Op Fl rsx
+.Ar name value
+.Ar
+.Nm
+.Fl d
+.Op Fl rs
+.Ar name
+.Ar
+.Nm
+.Fl c
+.Op Fl rs
+.Ar
+.Sh DESCRIPTION
+.Nm
+works on the extended attributes of each
+.Ar file .
+With no mode option, it lists the names of the attributes.
+.Pp
+The modes are:
+.Bl -tag -width indent
+.It Fl p
+Print the value of the attribute
+.Ar name .
+.It Fl w
+Set the attribute
+.Ar name
+to
+.Ar value .
+.It Fl d
+Remove the attribute
+.Ar name .
+.It Fl c
+Remove every attribute.
+.El
+.Pp
+The other options are:
+.Bl -tag -width indent
+.It Fl h , Fl Fl help
+Print the usage and exit.
+.It Fl l
+Print each attribute's name and value together.
+A hex value is printed with offsets and its characters.
+.It Fl r
+Descend into directories.
+.It Fl s
+Act on a symbolic link, not on the file it points to.
+.It Fl v
+Print the file name before each result.
+This is the default with
+.Fl r
+or with more than one file.
+.It Fl x
+Read and print values as hex.
+.El
+.Pp
+.Fl l
+can't be used with
+.Fl w
+or
+.Fl d .
+.Sh EXIT STATUS
+.Nm
+exits 0 if every file was handled, and 1 if any failed.
+.Sh EXAMPLES
+Set an attribute and print it:
+.Bd -literal -offset indent
+$ xattr -w org.example.note hello file.txt
+$ xattr -p org.example.note file.txt
+hello
+.Ed
+.Sh SEE ALSO
+.Xr getxattr 2 ,
+.Xr listxattr 2 ,
+.Xr removexattr 2 ,
+.Xr setxattr 2

@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+# SPDX-License-Identifier: BSD-2-Clause
+# Copyright (c) 2026 The Blueberry Pie OS Authors
+
+include /usr/share/pietoolchain/rules.mk
+include debian/tools.mk
+include $(PIETOOLCHAIN)/tools.mk
+
+all: $(TOOL_BINS)
+
+GZIP_SCRIPTS := gzexe zdiff zforce zmore znew
+GZIP_LINKS   := gzip:gunzip gzip:gzcat gzip:zcat zdiff:zcmp zmore:zless
+
+install: install-tools
+	install -m 755 $(addprefix $(SRCROOT)/gzip/,$(GZIP_SCRIPTS)) $(ROOT)/usr/bin/
+	install -m 644 $(addprefix $(SRCROOT)/gzip/,$(addsuffix .1,$(GZIP_SCRIPTS))) $(ROOT)/usr/share/man/man1/
+	set -e; $(foreach l,$(GZIP_LINKS),ln -f $(ROOT)/usr/bin/$(firstword $(subst :, ,$(l))) \
+		$(ROOT)/usr/bin/$(lastword $(subst :, ,$(l))); \
+		ln -f $(ROOT)/usr/share/man/man1/$(firstword $(subst :, ,$(l))).1 \
+		$(ROOT)/usr/share/man/man1/$(lastword $(subst :, ,$(l))).1;)
+
+.PHONY: all install

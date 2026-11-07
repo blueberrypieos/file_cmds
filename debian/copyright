@@ -1,0 +1,686 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: file_cmds
+Source: https://github.com/apple-oss-distributions/file_cmds
+ tag file_cmds-479 (commit 659a8a301e2acf0343f8b8673a154a2ca4d07084)
+Files-Excluded: *
+Files-Included:
+ chflags/chflags.1
+ chflags/chflags.c
+ chmod/chmod.1
+ chmod/chmod.c
+ chmod/chmod_acl.c
+ chmod/chmod_acl.h
+ chown/chgrp.1
+ chown/chown.8
+ chown/chown.c
+ cksum/cksum.1
+ cksum/cksum.c
+ cksum/crc.c
+ cksum/crc32.c
+ cksum/extern.h
+ cksum/print.c
+ cksum/sum.1
+ cksum/sum1.c
+ cksum/sum2.c
+ compress/compress.1
+ compress/compress.c
+ compress/uncompress.1
+ compress/zopen.c
+ compress/zopen.h
+ cp/cp.1
+ cp/cp.c
+ cp/extern.h
+ cp/utils.c
+ dd/args.c
+ dd/conv.c
+ dd/conv_tab.c
+ dd/dd.1
+ dd/dd.c
+ dd/dd.h
+ dd/extern.h
+ dd/misc.c
+ dd/position.c
+ df/df.1
+ df/df.c
+ du/du.1
+ du/du.c
+ gzip/futimens.c
+ gzip/gzexe
+ gzip/gzexe.1
+ gzip/gzip.1
+ gzip/gzip.c
+ gzip/unbzip2.c
+ gzip/unlz.c
+ gzip/unpack.c
+ gzip/unxz.c
+ gzip/zdiff
+ gzip/zdiff.1
+ gzip/zforce
+ gzip/zforce.1
+ gzip/zmore
+ gzip/zmore.1
+ gzip/znew
+ gzip/znew.1
+ gzip/zuncompress.c
+ install/install.1
+ install/pathnames.h
+ install/xinstall.c
+ ipcrm/ipcrm.1
+ ipcrm/ipcrm.c
+ ipcs/*
+ ln/link.1
+ ln/ln.1
+ ln/ln.c
+ ln/symlink.7
+ ls/cmp.c
+ ls/extern.h
+ ls/ls.1
+ ls/ls.c
+ ls/ls.h
+ ls/print.c
+ ls/util.c
+ mkdir/mkdir.1
+ mkdir/mkdir.c
+ mkfifo/mkfifo.1
+ mkfifo/mkfifo.c
+ mknod/mknod.8
+ mknod/mknod.c
+ mknod/pack_dev.c
+ mknod/pack_dev.h
+ mv/mv.1
+ mv/mv.c
+ mv/pathnames.h
+ pathchk/pathchk.1
+ pathchk/pathchk.c
+ pax/ar_io.c
+ pax/ar_subs.c
+ pax/buf_subs.c
+ pax/cache.c
+ pax/cache.h
+ pax/cpio.c
+ pax/cpio.h
+ pax/extern.h
+ pax/file_subs.c
+ pax/ftree.c
+ pax/ftree.h
+ pax/gen_subs.c
+ pax/getoldopt.c
+ pax/options.c
+ pax/options.h
+ pax/pat_rep.c
+ pax/pat_rep.h
+ pax/pax.1
+ pax/pax.c
+ pax/pax.h
+ pax/pax_format.c
+ pax/sel_subs.c
+ pax/sel_subs.h
+ pax/tables.c
+ pax/tables.h
+ pax/tar.c
+ pax/tar.h
+ pax/tty_subs.c
+ rm/rm.1
+ rm/rm.c
+ rm/unlink.1
+ rmdir/rmdir.1
+ rmdir/rmdir.c
+ stat/readlink.1
+ stat/stat.1
+ stat/stat.c
+ touch/touch.1
+ touch/touch.c
+ truncate/truncate.1
+ truncate/truncate.c
+ xattr/xattr.c
+
+Files: *
+Copyright: 1980, 1983, 1985-1987, 1989-1994 The Regents of the University of California
+License: LicenseRef-BSD-3-Clause-UC
+
+Files: chflags/chflags.c
+ chmod/chmod.c
+ chown/chown.c
+ cksum/cksum.c
+ compress/compress.c
+ cp/cp.c
+ cp/extern.h
+ cp/utils.c
+ dd/args.c
+ dd/dd.c
+ dd/dd.h
+ dd/misc.c
+ dd/position.c
+ df/df.1
+ du/du.c
+ ls/cmp.c
+ ls/extern.h
+ ls/ls.c
+ ls/ls.h
+ ls/print.c
+ mkfifo/mkfifo.c
+ mv/mv.c
+ rm/rm.c
+ touch/touch.c
+Copyright: 1988-1994 The Regents of the University of California
+ Apple Inc.
+License: LicenseRef-BSD-3-Clause-UC
+
+Files: chmod/chmod_acl.c
+ chmod/chmod_acl.h
+ mv/pathnames.h
+Copyright: 1989, 1993-1994 The Regents of the University of California
+ Apple Inc.
+License: BSD-4-Clause-UC
+
+Files: cksum/crc32.c
+Copyright: 1992-2009 The FreeBSD Project
+License: LicenseRef-BSD-2-Clause-author-contributors
+
+Files: compress/zopen.h
+Copyright: 1996 FreeBSD Inc.
+License: LicenseRef-BSD-2-Clause-FreeBSD-Inc
+
+Files: df/df.c
+Copyright: 1980, 1990, 1993-1994 The Regents of the University of California
+ UNIX System Laboratories, Inc.
+ Apple Inc.
+License: LicenseRef-BSD-3-Clause-UC
+
+Files: gzip/futimens.c
+Copyright: 2015 Jilles Tjoelker
+License: LicenseRef-BSD-2-Clause-author-contributors
+
+Files: gzip/gzexe
+ gzip/gzexe.1
+ gzip/zforce
+ gzip/zforce.1
+ gzip/znew
+ gzip/znew.1
+Copyright: 2003 Otto Moerbeek <otto@drijf.net>
+License: ISC
+
+Files: gzip/gzip.1
+Copyright: 1997, 2003-2004, 2008-2009, 2015, 2017 Matthew R. Green
+License: LicenseRef-BSD-2-Clause-author
+
+Files: gzip/gzip.c
+Copyright: 1997-1998, 2003-2004, 2006, 2008-2011, 2015, 2017 Matthew R. Green
+ Apple Inc.
+License: LicenseRef-BSD-2-Clause-author
+
+Files: gzip/unbzip2.c
+ mknod/pack_dev.c
+ mknod/pack_dev.h
+ stat/readlink.1
+ stat/stat.1
+Copyright: 1998, 2001-2002, 2006 The NetBSD Foundation, Inc.
+License: LicenseRef-BSD-2-Clause-NetBSD
+
+Files: gzip/unlz.c
+Copyright: 2018 The NetBSD Foundation, Inc.
+ 2013-2018 Antonio Diaz Diaz
+License: LicenseRef-BSD-2-Clause-NetBSD AND LicenseRef-BSD-2-Clause-lzip
+
+Files: gzip/unpack.c
+Copyright: 2009 Xin LI <delphij@FreeBSD.org>
+License: LicenseRef-BSD-2-Clause-author-contributors
+
+Files: gzip/unxz.c
+Copyright: 2011 The NetBSD Foundation, Inc.
+License: LicenseRef-BSD-2-Clause-NetBSD AND public-domain
+
+Files: gzip/zdiff
+ gzip/zdiff.1
+Copyright: 2003 Todd C. Miller <Todd.Miller@courtesan.com>
+ 2010 Joerg Sonnenberger <joerg@NetBSD.org>
+License: ISC
+
+Files: gzip/zmore
+ gzip/zmore.1
+Copyright: 2003 Todd C. Miller <Todd.Miller@courtesan.com>
+License: ISC
+
+Files: install/pathnames.h
+Copyright: 1989, 1993 The Regents of the University of California
+License: BSD-4-Clause-UC
+
+Files: install/xinstall.c
+Copyright: 1987, 1993 The Regents of the University of California
+ 2012-2013 SRI International
+ Apple Inc.
+License: LicenseRef-BSD-3-Clause-UC
+
+Files: ipcrm/ipcrm.1
+Copyright: 1994 Adam Glass
+License: LicenseRef-BSD-Source-Code-Glass
+
+Files: ipcrm/ipcrm.c
+Copyright: 1994 Adam Glass
+ Apple Inc.
+License: LicenseRef-BSD-4-Clause-Glass
+
+Files: ipcs/ipcs.1
+Copyright: 1994 SigmaSoft, Th. Lockert
+License: LicenseRef-BSD-4-Clause-SigmaSoft
+
+Files: ipcs/ipcs.c
+Copyright: 1994 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
+ Apple Inc.
+License: LicenseRef-BSD-3-Clause-ipcs
+
+Files: mknod/mknod.c
+ stat/stat.c
+Copyright: 1998, 2001-2002 The NetBSD Foundation, Inc.
+ Apple Inc.
+License: LicenseRef-BSD-2-Clause-NetBSD
+
+Files: pathchk/pathchk.1
+Copyright: 2001-2002 Chuck Rouillard
+License: LicenseRef-BSD-3-Clause-author
+
+Files: pathchk/pathchk.c
+Copyright: 2002 Tim J. Robbins
+License: LicenseRef-BSD-2-Clause-author-contributors
+
+Files: pax/ar_io.c
+ pax/ar_subs.c
+ pax/buf_subs.c
+ pax/cpio.c
+ pax/cpio.h
+ pax/extern.h
+ pax/file_subs.c
+ pax/ftree.c
+ pax/gen_subs.c
+ pax/options.c
+ pax/options.h
+ pax/pat_rep.c
+ pax/pat_rep.h
+ pax/pax.c
+ pax/pax.h
+ pax/pax_format.c
+ pax/sel_subs.c
+ pax/tables.c
+ pax/tables.h
+ pax/tar.c
+ pax/tar.h
+ pax/tty_subs.c
+Copyright: 1992-1993 The Regents of the University of California
+ 1992 Keith Muller
+ Apple Inc.
+License: LicenseRef-BSD-3-Clause-UC
+
+Files: pax/cache.c
+ pax/cache.h
+ pax/ftree.h
+ pax/pax.1
+ pax/sel_subs.h
+Copyright: 1992-1993 The Regents of the University of California
+ 1992 Keith Muller
+License: LicenseRef-BSD-3-Clause-UC
+
+Files: pax/getoldopt.c
+Copyright: none
+License: public-domain
+
+Files: truncate/truncate.1
+Copyright: 2000 Sheldon Hearn <sheldonh@FreeBSD.org>
+ 2021 The FreeBSD Foundation
+License: LicenseRef-BSD-2-Clause-author-contributors
+
+Files: truncate/truncate.c
+Copyright: 2000 Sheldon Hearn <sheldonh@FreeBSD.org>
+ 2021 The FreeBSD Foundation
+ Apple Inc.
+License: LicenseRef-BSD-2-Clause-author-contributors
+
+Files: xattr/xattr.c
+Copyright: 2007-2021 Apple Inc.
+License: MIT
+
+Files: debian/*
+Copyright: 2026 The Blueberry Pie OS Authors
+License: BSD-2-Clause
+
+License: BSD-2-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+ IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: BSD-4-Clause-UC
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+      This product includes software developed by the University of
+      California, Berkeley and its contributors.
+ 4. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: ISC
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+License: LicenseRef-BSD-2-Clause-FreeBSD-Inc
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY FreeBSD Inc. AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL [your name] OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: LicenseRef-BSD-2-Clause-NetBSD
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE NETBSD FOUNDATION, INC. AND CONTRIBUTORS
+ ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS
+ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+License: LicenseRef-BSD-2-Clause-author
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+ AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: LicenseRef-BSD-2-Clause-author-contributors
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: LicenseRef-BSD-2-Clause-lzip
+ Lzd - Educational decompressor for the lzip format
+ Copyright (C) 2013-2018 Antonio Diaz Diaz.
+ .
+ This program is free software. Redistribution and use in source and
+ binary forms, with or without modification, are permitted provided
+ that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+License: LicenseRef-BSD-3-Clause-UC
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: LicenseRef-BSD-3-Clause-author
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote
+    products derived from this software without specific prior written
+    permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: LicenseRef-BSD-3-Clause-ipcs
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL
+ THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: LicenseRef-BSD-4-Clause-Glass
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+      This product includes software developed by Adam Glass.
+ 4. The name of the Author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY Adam Glass ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL Adam Glass BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: LicenseRef-BSD-4-Clause-SigmaSoft
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+      This product includes software developed by SigmaSoft, Th. Lockert.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: LicenseRef-BSD-Source-Code-Glass
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. The name of the Author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY Adam Glass ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL Adam Glass BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ IN THE SOFTWARE.
+
+License: public-domain
+ The files that name this licence are in the public domain. Each file's
+ notice states how its authors dedicated or released it.
