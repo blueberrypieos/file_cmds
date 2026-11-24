@@ -1,3 +1,10 @@
+file-cmds (479+ds1-2) blueberry-pie-os; urgency=medium
+
+  * The source URL names the GitHub repository.
+  * Build-Depend on pietoolchain-host and pietoolchain-sdk.
+
+ -- Maxwell <maxwell@blueberrypieos.com>  Wed, 11 Nov 2026 22:26:42 +0000
+
 file-cmds (479+ds1-1) blueberry-pie-os; urgency=medium
 
   * file_cmds 479
